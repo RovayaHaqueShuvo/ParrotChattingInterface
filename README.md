@@ -12,6 +12,7 @@
 
 #Addindg URL in "setting.gradle.kts(Project Setting)
 
+
 pluginManagement {
     repositories {
         google()
@@ -20,7 +21,11 @@ pluginManagement {
         maven {
             url = uri("https://jitpack.io")
         }
+    }
+}
         
+
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
@@ -29,7 +34,6 @@ dependencyResolutionManagement {
         maven {
             url = uri("https://jitpack.io")
         }
-
     }
 }
 
