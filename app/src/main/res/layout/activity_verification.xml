@@ -6,4 +6,74 @@
     android:layout_height="match_parent"
     tools:context=".VerificationActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="124dp"
+        android:src="@drawable/identity_verificationpng"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="OTP Verification"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="379dp"
+        android:layout_height="208dp"
+        android:layout_marginTop="100dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/phnnumEdtxt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:hint="Number"
+                android:inputType="phone"
+                android:background="@drawable/edtxt_bg_color"
+                android:layout_margin="10dp"
+                android:paddingLeft="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/nextBtn"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:backgroundTint="#86CF89"
+                android:text="NEXT"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="@+id/phnnumEdtxt"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="@+id/phnnumEdtxt"
+                app:layout_constraintTop_toBottomOf="@+id/phnnumEdtxt" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

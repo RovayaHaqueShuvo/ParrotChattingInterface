@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "335742027596",
+    "project_id": "parrotmasseage",
+    "storage_bucket": "parrotmasseage.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335742027596:android:f5f512dbbe325fcea2f1e9",
+        "android_client_info": {
+          "package_name": "com.webcode.parrotmasseage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuOojb9CQZv7bqO9lWWoS95OLoMG1L8_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

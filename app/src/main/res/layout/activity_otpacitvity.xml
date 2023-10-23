@@ -6,4 +6,76 @@
     android:layout_height="match_parent"
     tools:context=".OTPAcitvity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="124dp"
+        android:src="@drawable/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/VerifytextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text=""
+        android:textColor="#2196F3"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="379dp"
+        android:layout_height="208dp"
+        android:layout_marginTop="100dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/VerifytextView"
+        app:layout_constraintStart_toStartOf="@+id/VerifytextView"
+        app:layout_constraintTop_toBottomOf="@+id/VerifytextView">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.mukeshsolanki.OtpView
+                android:id="@+id/otpNum"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="16dp"
+                android:focusableInTouchMode="true"
+                android:inputType="number"
+                android:itemBackground="@drawable/edtxt_bg_color"
+                android:padding="10dp"
+                app:OtpItemCount="6"
+                app:OtpItemSpacing="8dp"
+                app:OtpLineColor="#0169EC"
+                app:OtpViewType="line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.483"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/continueBtn"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="#86CF89"
+                android:text="Continue"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="@+id/otpNum"
+                app:layout_constraintHorizontal_bias="0.489"
+                app:layout_constraintStart_toStartOf="@+id/otpNum"
+                app:layout_constraintTop_toBottomOf="@+id/otpNum" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
